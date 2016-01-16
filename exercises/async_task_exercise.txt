@@ -1,0 +1,16 @@
+Show a TextView on the screen.
+Read number from that text view.
+Have an "execute" button which launched an AsyncTask
+	which calculates the sum of squares up to that number.
+When the async finishes, show the result in a different
+	read only, text view.
+the "execute" button should be disabled until the AsyncTask
+	finishes.
+
+page 188 in your material shows the use of AsyncTask.
+
+More advanced exercise: report with progress
+- add a progress bar to the GUI.
+- add a onProgressUpdate method to AsyncTask.
+- call 'publishProgress' in your computation.
+- see that the progress bar updates nicely.

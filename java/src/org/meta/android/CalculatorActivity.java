@@ -25,18 +25,18 @@ public class CalculatorActivity extends Activity {
     	EditText text_a=(EditText)findViewById(R.id.text_a);
     	EditText text_b=(EditText)findViewById(R.id.text_b);
     	TextWatcher tw=new TextWatcher() {
-			public void afterTextChanged(Editable s) {
-			}
-			public void beforeTextChanged(CharSequence s, int start, int count,
-					int after) {
-			}
-			public void onTextChanged(CharSequence s, int start, int before,
-					int count) {
-				CalculatorActivity.this.calc();
-			}
-		};
-		text_a.addTextChangedListener(tw);
-		text_b.addTextChangedListener(tw);
+		public void afterTextChanged(Editable s) {
+		}
+		public void beforeTextChanged(CharSequence s, int start, int count,
+				int after) {
+		}
+		public void onTextChanged(CharSequence s, int start, int before,
+				int count) {
+			CalculatorActivity.this.calc();
+		}
+	};
+	text_a.addTextChangedListener(tw);
+	text_b.addTextChangedListener(tw);
     }
     public void onTextClick(View v) {
     	Log.d("calculator","text clicked");

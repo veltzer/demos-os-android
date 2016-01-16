@@ -1,0 +1,6 @@
+Rewrite the Async exercise using an IntentService.
+Whenever the user pressed "execute" send an Intent
+	with some data to the service.
+The service will conduct some long calculation.
+The service will return a result.
+The GUI thread will show the result in the right box.

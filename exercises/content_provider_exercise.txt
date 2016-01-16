@@ -1,0 +1,9 @@
+1) show list view of all contacts you have on the phone.
+	- you will need an adaptor.
+	- use ListView
+	- you will need permission in your manifest.
+	- add a button which refreshes the display.
+
+2) create your own content provider.
+	- declare it in your manifest.
+	- use it instead of the google contacts provider.
