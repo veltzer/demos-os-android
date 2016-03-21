@@ -2,12 +2,12 @@ phase one - basic AsyncTask usage
 =================================
 Show a TextView on the screen.
 Read a number from that text view.
-Have an "execute" button which launched an AsyncTask
-	which calculates the sum of squares up to that number.
+Have an "execute" button which launches an AsyncTask
+	which calculates the sum of squares up to that number
+	(or just sleep for 5 seconds and invent some result...:)
+When the async task starts, deactivate the "execute" button.
 When the async finishes, show the result in a different
-	read only, text view.
-the "execute" button should be disabled until the AsyncTask
-	finishes.
+	read only, text view and re-activate the "execute" button.
 
 page 188 in your material shows the use of AsyncTask.
 
@@ -17,8 +17,11 @@ phase two - add progress reporting
 - add a onProgressUpdate method to AsyncTask.
 - call 'publishProgress' in your computation.
 - see that the progress bar updates nicely.
+(The progress bar needs "horizontal" style to have a look
+and feel of a progress bar).
 
-Advanced quesions:
+Advanced questions:
+===================
 - what if the code for the background task is not yours
 and you cannot sprinkle 'publishProgress' calls in it?
 - what if the code for the background task is yours
