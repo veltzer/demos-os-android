@@ -1,0 +1,58 @@
+- Create a chat android app.
+
+- The app should have two activities:
+	users - this is the one we start from.
+		in this screen there is ONLY a list of users
+		The layout of the users activity is just one ListView.
+	chat - this is where we get to when we select a user.
+		The layout of the chat activity is just,
+		Show the name of the user
+		scrolling TextView
+		button to update (this brings data from our fake source of data)
+		EditText to entermessage (enter will send) -> only bonus
+
+- Do the app without a real web server (use hardcoded data).
+	Use a fake source of data. This is an instance of class that you write that gives
+	you:
+	- the list of friends (this is a constant hardcoded list)
+	- the entire conversation with a every "friend".
+	This class is responsible to "emulate" your friends and once in while adds
+	a message to a chat.
+	This class is a replacement for a "real" web server that is supposed to give
+	you the same information.
+
+- You don't need to persist any data! If you restart the app you start over with new fake data.
+
+- In users you see all the users which are your friends (fake data).
+
+- In chat you see a chat with a particular user.
+	Messages are scrolling down.
+	Try to use the scrolling options of TextView (it has several features to help
+	with the scrolling).
+
+Bonus parts:
+- add a button in the chat activity to return to the users activity.
+- You get the users/messages from a web server but we don't really want to add the
+	work of bringing up a real web server.
+	Try to use AsyncTask for this and simlate a conversation with a web server.
+- Create a real web server and communicate with it in the background
+	You can create a server easily with some python code.
+	you can see examples here:
+	https://github.com/veltzer/demos-python3/tree/master/src/examples/short/flask
+- Poll the server for upadates to the GUI and do seamless upgrades of the UI.
+- Use fragments to have different designs for tablets and phones.
+	reuse your fragments.
+
+What are you using in this exercise:
+- using the ui thread
+- intents
+- two activities
+- ListView
+	repond to clicks on items in the list view
+- TextView with scrolling
+
+If you do the bonus:
+- AsyncTask
+- Http Requests
+- background HTTP requests to server.
+- updating of UI from non ui threads.
