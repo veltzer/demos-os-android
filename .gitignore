@@ -1,2 +1,4 @@
 *.stamp
 __pycache__
+/.pydmt
+__pycache__
