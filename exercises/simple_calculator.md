@@ -1,14 +1,9 @@
+Design a UI like this:
 
-
-
-	Design a UI like this:
-
-
-			[_______A_____] <--- this is a textview
-			[_______B_____] <--- this is another textview
-			[______A+B____] <--- this is a read only textview
-				[Add] <--- this is a button
-
+	[_______A_____] <--- this is a textview
+	[_______B_____] <--- this is another textview
+	[______A+B____] <--- this is a read only textview
+		[Add] <--- this is a button
 
 	The user can now enter a numbers in the first and second boxes
 	When the user clicks the "add" button, you will calculate the sum of numbers

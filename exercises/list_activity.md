@@ -6,9 +6,9 @@ Create an app with a ListActivity as it's main activity.
 
 Create an adapter that can adapt the Java ArrayList to ListView (ListActivity).
 
-Connect the together (setAdaper).
+Connect them together (setAdaper).
 
-And see evething work together.
+And see everything works together.
 
 References:
 * see https://developer.android.com/reference/android/app/ListActivity)
