@@ -13,8 +13,8 @@ Demonstrate that this actually works.
 
 There are two ways to do it:
 * Run your application. Fill some text into the EditText.
-    Move to another application. Go back to your application.
-    See that the text in the EditText is the same.
+  Move to another application. Go back to your application.
+  See that the text in the EditText is the same.
 * Run your application. Fill some text into the EditText.
-    Kill your application. Run your application again.
-    See that the text in the EditText is the same.
+  Kill your application. Run your application again.
+  See that the text in the EditText is the same.
