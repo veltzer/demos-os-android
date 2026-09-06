@@ -23,6 +23,7 @@
  *
  *   apps/samples/hello-jni/project/src/com/example/HelloJni/HelloJni.java
  */
+// cppcheck-suppress constParameterPointer ; JNI entry point, signature fixed by the JNI spec
 jdouble Java_com_example_hellojni_HelloJni_add( JNIEnv* env, jobject thiz, jdouble a, jdouble b)
 {
 	double ca=(double)a;
@@ -30,6 +31,7 @@ jdouble Java_com_example_hellojni_HelloJni_add( JNIEnv* env, jobject thiz, jdoub
 	double result=ca+cb;
 	return (jdouble)result;
 }
+// cppcheck-suppress constParameterPointer ; JNI entry point, signature fixed by the JNI spec
 jdouble Java_com_example_hellojni_HelloJni_sub( JNIEnv* env, jobject thiz, jdouble a, jdouble b)
 {
 	double ca=(double)a;
@@ -37,6 +39,7 @@ jdouble Java_com_example_hellojni_HelloJni_sub( JNIEnv* env, jobject thiz, jdoub
 	double result=ca-cb;
 	return (jdouble)result;
 }
+// cppcheck-suppress constParameterPointer ; JNI entry point, signature fixed by the JNI spec
 jdouble Java_com_example_hellojni_HelloJni_mul( JNIEnv* env, jobject thiz, jdouble a, jdouble b)
 {
 	double ca=(double)a;
@@ -44,6 +47,7 @@ jdouble Java_com_example_hellojni_HelloJni_mul( JNIEnv* env, jobject thiz, jdoub
 	double result=ca*cb;
 	return (jdouble)result;
 }
+// cppcheck-suppress constParameterPointer ; JNI entry point, signature fixed by the JNI spec
 jdouble Java_com_example_hellojni_HelloJni_div( JNIEnv* env, jobject thiz, jdouble a, jdouble b)
 {
 	double ca=(double)a;

@@ -1,2 +1,4 @@
+# shellcheck shell=bash
 # android
-export PATH=$(path_add "$PATH" "~/install/android-sdk-linux/platform-tools")
+PATH="$(path_add "${PATH}" "${HOME}/install/android-sdk-linux/platform-tools")"
+export PATH

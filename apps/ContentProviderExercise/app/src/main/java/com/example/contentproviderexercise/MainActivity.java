@@ -1,6 +1,5 @@
 package com.example.contentproviderexercise;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;

@@ -9,8 +9,7 @@ src_dirs = ["exercises"]
 src_dirs = ["exercises"]
 
 [processor.shellcheck]
-src_dirs = ["scripts", "exercises"]
-args = ["--severity=error", "--shell=bash"]
+src_dirs = ["scripts", "exercises", "apps/ManyExercisesTogether/scripts", "c"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
@@ -20,3 +19,24 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── xml / svg ───────────────────────────────────────────────────────────────
+
+[processor.xmllint]
+src_dirs = ["apps", "c"]
+
+# ─── c / c++ ─────────────────────────────────────────────────────────────────
+
+[processor.cppcheck]
+src_dirs = ["c"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability",
+	"--inline-suppr",
+]
+
+# ─── java ────────────────────────────────────────────────────────────────────
+
+[processor.checkstyle]
+src_dirs = ["apps", "c"]
+args = ["-c", "checkstyle.xml"]
