@@ -26,7 +26,7 @@ src_dirs = [".github/workflows"]
 
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
-[processor.checker.xmllint]
+[processor.checker.ixmllint]
 src_dirs = ["apps", "c"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
