@@ -12,7 +12,7 @@ src_dirs = ["exercises"]
 [processor.checker.zspell]
 src_dirs = ["exercises"]
 
-[processor.checker.shellcheck]
+[processor.checker.ishellcheck]
 src_dirs = ["scripts", "exercises", "apps/ManyExercisesTogether/scripts", "c"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
@@ -41,6 +41,5 @@ args = [
 
 # ─── java ────────────────────────────────────────────────────────────────────
 
-[processor.checker.checkstyle]
+[processor.checker.icheckstyle]
 src_dirs = ["apps", "c"]
-args = ["-c", "checkstyle.xml"]
