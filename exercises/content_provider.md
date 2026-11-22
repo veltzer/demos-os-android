@@ -9,6 +9,7 @@
     - add a button which refreshes the display.
 
 Advanced:
+
 - create your own content provider.
     - declare it in your manifest.
     - use it instead of the google contacts provider.

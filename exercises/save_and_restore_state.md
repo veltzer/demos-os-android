@@ -12,6 +12,7 @@ Try to use the right method, meaning
 Demonstrate that this actually works.
 
 There are two ways to do it:
+
 * Run your application. Fill some text into the EditText.
   Move to another application. Go back to your application.
   See that the text in the EditText is the same.

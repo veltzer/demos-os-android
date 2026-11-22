@@ -5,6 +5,7 @@
 Create a simple Android app that counts from 1 to 10 in the background, updating a TextView every second.
 
 ## UI Requirements
+
 - TextView: Shows current count
 - ProgressBar: Visible during counting
 - Button: Starts the counter
@@ -60,6 +61,7 @@ WorkManager.getInstance(context).enqueue(request);
 ```
 
 ## Requirements
+
 1. Counter must run in background
 1. UI must update every second
 1. Handle orientation changes
@@ -67,6 +69,7 @@ WorkManager.getInstance(context).enqueue(request);
 1. Prevent button clicks while counting
 
 ## Bonus Tasks
+
 1. Add pause/resume
 1. Add cancel option
 1. Save state on rotation

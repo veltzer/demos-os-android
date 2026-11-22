@@ -13,4 +13,5 @@ Connect them together (setAdapter).
 And see everything works together.
 
 References:
+
 * [ListActivity](https://developer.android.com/reference/android/app/ListActivity)
