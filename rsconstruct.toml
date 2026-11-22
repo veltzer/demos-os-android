@@ -32,6 +32,8 @@ src_dirs = [".github/workflows"]
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
 [processor.checker.ixmllint]
+# warnings fail too, not only fatal errors
+strict = true
 src_dirs = ["apps", "c"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
