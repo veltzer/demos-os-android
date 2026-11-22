@@ -1,6 +1,7 @@
 # Android Background Counter Exercise
 
 ## Task
+
 Create a simple Android app that counts from 1 to 10 in the background, updating a TextView every second.
 
 ## UI Requirements
