@@ -42,13 +42,16 @@ src_dirs = ["apps", "c"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
 
+# Each C file is its own program/JNI library (one per directory), so the default one-run-per-file mode fits.
 [processor.checker.cppcheck]
+dep_inputs = ["cppcheck.cfg"]
 src_dirs = ["c"]
 args = [
 	"--error-exitcode=1",
-	"--enable=warning,style,performance,portability",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
 	"--check-level=exhaustive",
 	"--inline-suppr",
+	"--library=cppcheck.cfg",
 ]
 
 # ─── java ────────────────────────────────────────────────────────────────────
