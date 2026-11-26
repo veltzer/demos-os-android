@@ -68,3 +68,8 @@ args = [
 
 [processor.checker.icheckstyle]
 src_dirs = ["apps", "c"]
+
+# every lint suppression names a rule and says why (see the fleet's CLAUDE.md)
+[processor.checker.suppressions]
+src_dirs = [".github", "apps", "c", "config", "exercises", "scripts"]
+src_files = [".yamllint.yaml"]
