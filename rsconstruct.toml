@@ -45,6 +45,7 @@ args = ["--offline", "--no-progress", "--persona=pedantic"]
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
 [processor.checker.ixmllint]
+src_files = ["checkstyle.xml"]
 # warnings fail too, not only fatal errors
 strict = true
 src_dirs = ["apps", "c"]
