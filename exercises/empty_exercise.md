@@ -4,9 +4,10 @@ Create a empty project with no activity.
 
 Add an activity.
 Look at the code that was added to your project
-    XML file
-    Java file
-    Changes in the manifest file
+
+- XML file
+- Java file
+- Changes in the manifest file
 
 Run the application, see your activity.
 
